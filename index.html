@@ -11,9 +11,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
-
-	<!-- Google Fonts -->
-
 	<!-- My Styles -->
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -21,35 +18,37 @@
 <body>
 	<div class="container">
 		<div class="izquierda col-md-5 col-md-offset-1">		
-			
-			  <textarea name="comment" class="texto" placeholder="Escribe tu Tweet!"></textarea>
-			  <button class="crear">Tweet!</button>
+			<form class="myform">
+				<textarea name="comment" class="texto" placeholder="Escribe tu Tweet!"></textarea>
+			  <input type="submit" value="Tweet!">
+			</form> 
+			  
 			
 		</div>
 		<div class="derecha col-md-5 col-md-offset-1">
-			<div class="demo_tweet">
-				<div class="row">
-					<i class="fas fa-times"></i>
-					<img src="img/naomi-thai.png" alt="">
-					<div class="username">@ame182</div>
-				</div>
-				<div class="row">
-					<div class="eltweet"></div>
-				</div>
-				
-				<div class="row">
-					<div class="act">
-					<i class="far fa-heart"></i>
-					<i class="fas fa-trash-alt"></i>
+			<div class="timeline">
+				<div class="demotweet">
+					<div class="equis"><i class="fas fa-times"></i></div>
+					<div class="user">
+						<img src="img/naomi-thai.png" alt="">
+						<div class="username">@ame182</div>
 					</div>
-				</div>
-
+					<div class="col-md-10 offset-md-2 contenido-tweet">
+	                <p>Texto del tweet</p>
+	             	 </div>
+					
+					<div class="act">
+						<i class="far fa-heart like"></i>
+						<div class="contador-likes">0</div>
+						<i class="fas fa-trash-alt eliminar"></i>
+					</div>
+				
+				</div>	
 			</div>
-			
-			
 		</div>
 	</div>
-
+			
+			
 
 	<!-- Jquery 3.3.1 -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -58,8 +57,8 @@
 	<!-- FontAwesome 5 -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-	<!-- Script Js -->
+
+	<!-- Javascript -->
 	<script src="script.js"></script>
-	
 </body>
 </html>
